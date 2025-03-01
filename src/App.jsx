@@ -5,6 +5,9 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Verify from "./pages/VerifyAccount";
 import Dashboard from "./pages/Dashboard";
+import ForgotPassword from "./pages/ForgotPassword";
+import VerifyReset from "./pages/VerifyReset";
+import ResetPassword from "./pages/ResetPassword";
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/verify" element={<Verify />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/verify-reset" element={<VerifyReset />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
         </Routes>
       </div>
     </Router>

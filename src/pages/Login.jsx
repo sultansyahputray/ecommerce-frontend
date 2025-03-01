@@ -1,4 +1,4 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "/src/services/api";
 
@@ -44,6 +44,12 @@ export default function Login() {
         />
         <button type="submit">Login</button>
       </form>
+
+      <p>
+        <a href="#" onClick={() => navigate("/forgot-password")}>
+          Forgot Password?
+        </a>
+      </p>
     </div>
   );
 }
